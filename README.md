@@ -4,8 +4,10 @@
 <div style="text-align: center;"><a class="nav" href="https://millenniumfalcon418.github.io/hyperdrive/finalreport" target="_blank">Final Report</a> <a class="nav" href="https://millenniumfalcon418.github.io/hyperdrive/proposal" target="_blank">Proposal</a> <a class="nav"  href="https://millenniumfalcon418.github.io/hyperdrive/checkpoint" target="_blank">Checkpoint Report</a></div> -->
 
 ## OVERVIEW
-Fast, high-performance object tracking is an important vision problem today. It is an important part of many applications today like, autonomous vehicles, video surveillance captured by drones, cameras, video processing and analyisis amongst many others. While most of the algorithms have been aimed at tracking objects in footage captured at 30 FPS. Many algorithms perform at a suboptimal level when used against a video of frame rate. 
+Fast, high-performance object tracking is an important vision problem today. It is an important part of many applications today like, autonomous vehicles, video surveillance captured by drones, cameras, video processing and analyisis amongst many others. Tracking helps in localizing the object in every frame in higher level applications. 
+
 ## THE CHALLENGE
+While most of the algorithms have been aimed at tracking objects in footage captured at 30 FPS. Many algorithms perform at a suboptimal level when used against a video of frame rate. 
 
 ## RESOURCES
 
