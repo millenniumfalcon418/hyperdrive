@@ -22,8 +22,10 @@ For the demo, the main focus will be on succesfully implementing the MOSSE filte
 GHC machines with NVIDIA Geforce GTX 1080
 
 ## REFERENCES
-
-
+1. Hamed Kiani Galoogahi1, Ashton Fagg, Chen Huang, Deva Ramanan and Simon Lucey, "Need for Speed: A Benchmark for Higher Frame Rate Object Tracking"
+2. David S. Bolme, J. Ross Beveridge, Bruce A. Draper, Yui Man Lui, "Visual Object Tracking using Adaptive Correlation Filters"
+3. João F. Henriques, Rui Caseiro, Pedro Martins, and Jorge Batista, "High-Speed Tracking with Kernelized Correlation Filters"
+4. Alper Yilmaz, Omar Javed, Mubarak Shah, "Object Tracking: A Survey"
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
