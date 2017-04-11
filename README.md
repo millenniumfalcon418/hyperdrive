@@ -1,4 +1,3 @@
-## Welcome to HYPERDRIVE 
 
 **[Avisha Dhisle](https://www.linkedin.com/in/avisha-dhisle/)** (adhisle) and **[Prerit Rodney](https://www.linkedin.com/in/preritrodney/)** (prodney)
 
