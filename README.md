@@ -11,12 +11,15 @@ Today, due to the emergence of cameras with much higher capture rates, 240 FPS, 
 One of the challenges of this project is the selection of the algorithms. There are primarily two mthods that can be implemented- Correlation Filter (CF) based methods and Convolutional Neural Network (CNN) based methods. While CF-based algorithms are efficient and are also capable of operating at hundreds of frames per second on embedded devices, the CNN-based algorithms are robust and reliable. Inspite of the high tolerance, CNNs are computationally very intensive as compared to the simpler CF methods.
 Therefore, it is necessary that the algorithm chosen should not only be able to track at a high frame rate with accuracy and overcome problems such as occlusion, scale variation, illumination variation and object deformation, but also be super fast to be able to process images at supersonic speed!
 
-## RESOURCES
-
 ## DELIVERABLES
-### HOPE TO ACHIEVE
+### OUR ASPIRATIONS
+The aim of our project is to build a CUDA library for a fast object tracker that can be run on a high-end GPU to obtain a high processing rate of videos. The high performance code will use a MOSSE correlation filter-based algorithm, as it is known to run at an impressive speed of ~700 FPS.
 
 ### DEMO
+For the demo, the main focus will be on succesfully implementing the MOSSE filter in CUDA to run on the GPU for achieving object tracking at a frame rate that is atleast nominally higher than 30 FPS.
+
+## RESOURCES
+GHC machines with NVIDIA Geforce GTX 1080
 
 ## REFERENCES
 
