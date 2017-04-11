@@ -27,5 +27,5 @@ GHC machines with NVIDIA Geforce GTX 1080
 2. David S. Bolme, J. Ross Beveridge, Bruce A. Draper, Yui Man Lui, "Visual Object Tracking using Adaptive Correlation Filters"
 3. João F. Henriques, Rui Caseiro, Pedro Martins, and Jorge Batista, "High-Speed Tracking with Kernelized Correlation Filters"
 4. Alper Yilmaz, Omar Javed, Mubarak Shah, "Object Tracking: A Survey"
-5. Moving Object Detection Approaches, Challenges and Object Tracking
+5. S.H. Shaikh, K. Saeed, N. Chaki, "Chapter 2: Moving Object Detection Approaches, Challenges and Object Tracking"
 
