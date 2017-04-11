@@ -18,7 +18,7 @@ Therefore, it is necessary that the algorithm chosen should not only be able to 
 The aim of our project is to build a CUDA library for a fast object tracker that can be run on a high-end GPU to obtain a high processing rate of videos. The high performance code will use a MOSSE correlation filter-based algorithm, as it is known to run at an impressive speed of ~700 FPS.
 
 ### DEMO
-For the demo, the main focus will be on succesfully implementing the MOSSE filter in CUDA to run on the GPU for achieving object tracking at a frame rate that is atleast nominally higher than 30 FPS.
+For the demo, the main focus will be on succesfully implementing the MOSSE filter in CUDA to run on the GPU for achieving object tracking at a frame rate that is atleast nominally higher than 700 FPS.
 
 ## RESOURCES
 GHC machines with NVIDIA Geforce GTX 1080
