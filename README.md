@@ -1,5 +1,7 @@
 ## Welcome to HYPERDRIVE 
 
+Avisha Dhisle (adhisle) and Prerit Rodney (prodney)
+
 <!-- <style>a.nav { color: #585858; border-radius: 5px; background: #E6E6E6; padding: .2em .7em; text-decoration: none; margin: .5em .5em; display:inline-block; }a.nav:hover { background: #D8D8D8; color: black;}a.nav.selected { background: #D8D8D8; font-weight: bold; }small{color: #5e5e5e; display:block;text-align:center;margin-bottom: 1em;}</style>
 <div style="text-align: center;"><a class="nav" href="https://millenniumfalcon418.github.io/hyperdrive/finalreport" target="_blank">Final Report</a> <a class="nav" href="https://millenniumfalcon418.github.io/hyperdrive/proposal" target="_blank">Proposal</a> <a class="nav"  href="https://millenniumfalcon418.github.io/hyperdrive/checkpoint" target="_blank">Checkpoint Report</a></div> -->
 
@@ -28,9 +30,3 @@ GHC machines with NVIDIA Geforce GTX 1080
 4. Alper Yilmaz, Omar Javed, Mubarak Shah, "Object Tracking: A Survey"
 5. Moving Object Detection Approaches, Challenges and Object Tracking, "file:///C:/Users/avi46/Downloads/9783319073859-c1%20(1).pdf"
 
-## TEAM MEMBERS
-1. Avisha Dhisle
-adhisle@andrew.cmu.edu
-
-2. Prerit Rodney
-prodney@andrew.cmu.edu
