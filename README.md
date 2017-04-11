@@ -1,4 +1,4 @@
-<div style="text-align: right"> Welcome to HYPERDRIVE </div> 
+## <div style="text-align: right"> Welcome to HYPERDRIVE </div> 
 
 You can read our proposal here- [PROPOSAL](https://github.com/millenniumfalcon418/hyperdrive/edit/gh-pages/README.md)
 
