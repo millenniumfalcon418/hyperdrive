@@ -9,7 +9,7 @@ Fast, high-performance object tracking is an important vision problem today. It 
 ## THE CHALLENGE
 Today, due to the emergence of cameras with much higher capture rates, 240 FPS, the need to have special algorithms has arisen. Many of the existing algorithms are aimed at the established frame rate of 30 FPS and have been observed to perform at a suboptimal level when used against a video of higher frame rates. Therefore, for real time tracking of objects in surveillance captured at such high frame rates, it is imperative that we have a fast object tracker. Another application of the fast tracker is for processing of 30 FPS videos at a much higher rate, like say 2000 FPS. This would help in alleviating the time that is taken to go through hours and hours of video footage.
 One of the challenges of this project is the selection of the algorithms. There are primarily two mthods that can be implemented- Correlation Filter (CF) based methods and Convolutional Neural Network (CNN) based methods. While CF-based algorithms are efficient and are also capable of operating at hundreds of frames per second on embedded devices, the CNN-based algorithms are robust and reliable. Inspite of the high tolerance, CNNs are computationally very intensive as compared to the simpler CF methods.
-
+Therefore, it is necessary that the algorithm chosen should not only be able to track at a high frame rate with accuracy but should also be robust, regardless of problems such as occlusion, scale variation, illumination variation and object deformation.
 ## RESOURCES
 
 ## DELIVERABLES
