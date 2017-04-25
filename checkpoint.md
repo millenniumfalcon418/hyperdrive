@@ -22,3 +22,10 @@ In our quest for the implementation and analysis of a high performance, fast Con
 |1	|189.83|
 
 ### With OpenMP Primitives
+| Sr. No.   |      Num_threads      |  Execution Time(s) |
+|:----------:|:-------------:|:------:|
+|1	|2	|95.88|
+|2	|4	|52.10|
+|3	|8	|27.09|
+|4	|16	|28.73|
+
