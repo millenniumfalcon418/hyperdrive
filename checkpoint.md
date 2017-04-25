@@ -15,6 +15,7 @@ In our quest for the implementation and analysis of a high performance, fast Con
 <!--![Results for our custom SPD matrix of varying dimensions](images/exec.png)-->
 <div style="text-align: center;"><small><a href="https://millenniumfalcon418.github.io/hyperdrive/executiontimevsN">Results for our custom SPD matrix of varying dimensions</a></small></div>
 
+<br> </br>
 
 ## Test Results with Test Matrix of size 1089x1089
 ### Serial Code
@@ -23,6 +24,8 @@ In our quest for the implementation and analysis of a high performance, fast Con
 | Sr. No.   |  Execution Time(s)   |
 |:----------:|:------:|
 |1	|189.83|
+
+<br> </br>
 
 ### With OpenMP Primitives
 
