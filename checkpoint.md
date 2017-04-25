@@ -10,3 +10,4 @@ In our quest for the implementation and analysis of a high performance, fast Con
 5. Once we achieved the correct implementation and execution times against our custom matrix, we tested the algorithms against available test matrices of the order of 1089 and profiled the code to obtain the regions with the most scope for parallelization.
 6. After implementing the OpenMP primitives, the new execution time for the 1089x1089 test matrix was noted.
 
+## Test Results
