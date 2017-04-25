@@ -12,9 +12,8 @@ In our quest for the implementation and analysis of a high performance, fast Con
 
 ## Test Results
 ![Results for our custom SPD matrix of varying dimensions](https://github.com/millenniumfalcon418/hyperdrive/gh-pages/executiontimevsN.png) <!--"Results for our custom SPD matrix of varying dimensions")-->
-<small><a href="">Results for our custom SPD matrix of varying dimensions</a></small>
-<a href="http://15418.courses.cs.cmu.edu/spring2016/competition">See details here</a>
-
-![alt text](https://github.com/millenniumfalcon418/hyperdrive/edit/gh-pages/execution time vs N.png)
+<small><a href="https://millenniumfalcon418.github.io/hyperdrive/executiontimevsN">Results for our custom SPD matrix of varying dimensions</a></small>
 
 <!--![alt text](https://upload.wikimedia.org/wikipedia/en/thumb/0/02/Tweety.svg/570px-Tweety.svg.png) -->
+
+## 
