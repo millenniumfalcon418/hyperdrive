@@ -36,4 +36,6 @@ In our quest for the implementation and analysis of a high performance, fast Con
 |2	|4	|52.10|
 |3	|8	|27.09|
 
+<br>
+
 **Thus, we observed a speedup of 6.6x of the OpenMP implementation over the serial code.**
