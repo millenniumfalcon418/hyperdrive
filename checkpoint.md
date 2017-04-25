@@ -11,7 +11,7 @@ In our quest for the implementation and analysis of a high performance, fast Con
 6. After implementing the OpenMP primitives, the new execution time for the 1089x1089 test matrix was noted.
 
 ## Test Results
-<img src="https://github.com/millenniumfalcon418/hyperdrive/tree/gh-pages/images/executiontimevsN.png" width="600" height="600" />
+<img src="hyperdrive/images/executiontimevsN.png" width="600" height="600" />
 <!--![Results for our custom SPD matrix of varying dimensions](images/executiontimevsN.png)-->
 <small><a href="https://millenniumfalcon418.github.io/hyperdrive/executiontimevsN">Results for our custom SPD matrix of varying dimensions</a></small>
 
