@@ -33,7 +33,6 @@ For the demo, we will demonstrate a code that implements the conjugate-gradient 
 
 ## RESOURCES
 GHC machines with NVIDIA Geforce GTX 1080
-![alt text](https://upload.wikimedia.org/wikipedia/en/thumb/0/02/Tweety.svg/570px-Tweety.svg.png)
 
 ## REFERENCES
 1. https://en.wikipedia.org/wiki/Sparse_matrix#Solving_sparse_matrix_equations
