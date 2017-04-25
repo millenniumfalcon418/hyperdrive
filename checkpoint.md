@@ -14,3 +14,5 @@ In our quest for the implementation and analysis of a high performance, fast Con
 ![Results for our custom SPD matrix of varying dimensions](images/execution time vs N.png "Results for our custom SPD matrix of varying dimensions")
 <small><a href="">Results for our custom SPD matrix of varying dimensions</a></small>
 <a href="http://15418.courses.cs.cmu.edu/spring2016/competition">See details here</a>
+
+![alt text](https://upload.wikimedia.org/wikipedia/en/thumb/0/02/Tweety.svg/570px-Tweety.svg.png)
