@@ -22,7 +22,14 @@ Matrix B must be a vector of size equal to order of A.
 1) Solution x is computed as the result of the algorithm
 2) L2 norm of the residual vector must be less than e-05 to declare convergence
 
-##
+## VISUAL REPRESENTATIONS OF TEST MATRICES USED
+
+## OUR APPROACH
+### Compressed Row Storage Format
+In order to mitigate the bandwidth-bound problem, we stored the sparse matrices in the compressed row storage format. As per the CRS format, we used three 1-D arrays, such that one array stored only the non-zero elements, the second one stored their corresponding column numbers and the third one gave the row number as well as stored the number at which we index into the other two arrays to retrieve the required element.
+We observed a reduction in memory storage of about 99.907% for our largest test matrix of size 90449.
+
+### 
 
 ## RESOURCES
 GHC machines with NVIDIA Geforce GTX 1080
