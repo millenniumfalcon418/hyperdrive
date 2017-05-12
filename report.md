@@ -1,4 +1,3 @@
-For the 1806x1806 matrix,
 | Sr. No.   |      Name      |  No.of iters  |  Execution Time(s) |  Norm(temp,n)  |  Norm(r,n)  |
 |:----------:|:-------------:|:------:|:------:|:------:|:------:|
 |1	|Plain conjugate gradient	|16141|144.4692|9.67575e-09|0.00223618|
