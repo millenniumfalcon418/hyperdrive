@@ -5,7 +5,7 @@
 <div style="text-align: center;">
 <a class="nav" href="https://millenniumfalcon418.github.io/hyperdrive/proposal" target="_blank">Proposal</a>
 <a class="nav"  href="https://millenniumfalcon418.github.io/hyperdrive/checkpoint" target="_blank">Checkpoint Report</a>
-<a class="nav"  href="https://millenniumfalcon418.github.io/hyperdrive/checkpoint" target="_blank">Final Report</a></div>
+<a class="nav"  href="https://millenniumfalcon418.github.io/hyperdrive/final_report" target="_blank">Final Report</a></div>
 
 ## OVERVIEW
 Quite often in numerical analysis, the solution to partial differential equations, non-linear systems and optimization problems leads to a system of linear equations. From economic models to large-scale and complex network analysis, the solutions involve numerical computations on matrices that are sparse, dense or structured. Today, linear algebraic calculations on sparse matrices of the order of thousands of tens are trite. They are commonly used in circuit and physical simulations, computer vision, machine learning and various other graph-based applications.
