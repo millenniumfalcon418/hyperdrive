@@ -4,7 +4,8 @@
 <style>a.nav { color: #585858; border-radius: 5px; background: #E6E6E6; padding: .2em .7em; text-decoration: none; margin: .5em .5em; display:inline-block; }a.nav:hover { background: #D8D8D8; color: black;}a.nav.selected { background: #D8D8D8; font-weight: bold; }small{color: #5e5e5e; display:block;text-align:center;margin-bottom: 1em;}</style>
 <div style="text-align: center;">
 <a class="nav" href="https://millenniumfalcon418.github.io/hyperdrive/proposal" target="_blank">Proposal</a>
-<a class="nav"  href="https://millenniumfalcon418.github.io/hyperdrive/checkpoint" target="_blank">Checkpoint Report</a></div>
+<a class="nav"  href="https://millenniumfalcon418.github.io/hyperdrive/checkpoint" target="_blank">Checkpoint Report</a>
+<a class="nav"  href="https://millenniumfalcon418.github.io/hyperdrive/checkpoint" target="_blank">Final Report</a></div>
 
 ## OVERVIEW
 Quite often in numerical analysis, the solution to partial differential equations, non-linear systems and optimization problems leads to a system of linear equations. From economic models to large-scale and complex network analysis, the solutions involve numerical computations on matrices that are sparse, dense or structured. Today, linear algebraic calculations on sparse matrices of the order of thousands of tens are trite. They are commonly used in circuit and physical simulations, computer vision, machine learning and various other graph-based applications.
@@ -23,14 +24,10 @@ With a direct method, there is a definite amount of work that needs to be done. 
 3) The algorithm involved many operations like two matrix-vector products, scalar-vector products, etc., all of which are computationally intensive and hence require a lot of time in a single-threaded program.
 
 
-## DELIVERABLES
-### OUR ASPIRATIONS
-We will attempt to use either the Jacobian preconditioner or the Symmetric Successive Over-Relaxation (SSOR) preconditioner. The use of a preconditioner can significantly help us converge faster, thereby reducing computation time.
-An efficient structure to store the sparse matrix will be implemented, so as to avoid being bandwidth-limited.
-A parallel implementation in CUDA and/or using OpenMP primitives will be targeted so as to achieve a significant speedup. Both the implementations will be compared against each other and the best possible implementation of the sequential code for analysis. The analysis will also contain a profiling of both the parallel methodologies so as to provide a quantitative comparison of the two.
-
-### DEMO
-For the demo, we will demonstrate a code that implements the conjugate-gradient algorithm with preconditioning and compressed storage format and plot graphs that analyze the speedup and overheads in each methodology. This can help provide a holistic view of which implementation can be better than the other at a particular value of N.
+## CAPABILITIES OF OUR CONJUGATE GRADIENT SOLVER
+1) Provides a preconditioned sequential implementation of the CG solver
+2) Includes a multithreaded implementation of the Preconditioned Conjugate Gradient (PCG) solver using OpenMP primitives
+3) Presents a GPU implementation of the PCG using CUDA
 
 ## RESOURCES
 GHC machines with NVIDIA Geforce GTX 1080
