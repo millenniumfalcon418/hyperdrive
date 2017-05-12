@@ -17,9 +17,12 @@ Matrix A must be-
 1) Symmetric
 2) Positive definite
 3) Banded, diagonally heavy
+Matrix B must be a vector of size equal to order of A.
 ## Output Constraints
 1) Solution x is computed as the result of the algorithm
 2) L2 norm of the residual vector must be less than e-05 to declare convergence
+
+##
 
 ## RESOURCES
 GHC machines with NVIDIA Geforce GTX 1080
