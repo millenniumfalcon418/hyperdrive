@@ -16,10 +16,12 @@ The conjugate gradient method is an algorithm for the numerical solution of part
 With a direct method, there is a definite amount of work that needs to be done. To get a solution, the algorithm needs to run until the end. Typically, the solution you get will then be close to the exact one. With iterative methods, the old guess is updated in the hope that we get a bit closer to the true solution. This means that the amount of work to be done can be decided on how accuracy is needed. 
 
 ## THE CHALLENGE
-CG is known to converge to the exact solution in N steps for a matrix of size N, which can lead to a lot of computation time for matrices having a very high value of N, as so often happens with real world solutions. Therefore, to reduce this time, the algorithm would be required to stop its iterations much earlier and still obtain a very good approximation after much fewer than N steps.
-To achieve this, a certain amount of preconditioning is required. An appropriate preconditioner that can produce the fastest convergence under the given code conditions needs to be selected.
+1) Since the CG algorithm deals with large matrices, the problem can easily be bandwidth-bound. Hence, it was essential to store the sparse matrix in a compressed format that does not take up much storage and also enables faster access to reduce element retrieval time.
 
-Another challenge was be to prevent the code from being bandwidth-bound. For this, it will be essential to store the sparse matrix in a compressed format that does not take up much storage. Memory overhead increases largely with extremely huge matrices. Therefore, it is important to make efficient use of storage. Also, the compressed format should enable faster access to reduce element retrieval time.
+2) CG is known to converge to the exact solution in N steps for a matrix of size N, which can lead to a lot of computation time for matrices having a very high value of N, as so often happens with real world solutions. Therefore, to reduce this time, the algorithm would be required to stop its iterations much earlier and still obtain a very good approximation after much fewer than N steps. To achieve this, a certain amount of preconditioning is required. An appropriate preconditioner that can produce the fastest convergence under the given code conditions needs to be selected.
+
+3) The algorithm involved many operations like two matrix-vector products, scalar-vector products, etc., all of which are computationally intensive and hence require a lot of time in a single-threaded program.
+
 
 ## DELIVERABLES
 ### OUR ASPIRATIONS
