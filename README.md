@@ -4,7 +4,6 @@
 <style>a.nav { color: #585858; border-radius: 5px; background: #E6E6E6; padding: .2em .7em; text-decoration: none; margin: .5em .5em; display:inline-block; }a.nav:hover { background: #D8D8D8; color: black;}a.nav.selected { background: #D8D8D8; font-weight: bold; }small{color: #5e5e5e; display:block;text-align:center;margin-bottom: 1em;}</style>
 <div style="text-align: center;">
 <a class="nav" href="https://millenniumfalcon418.github.io/hyperdrive/proposal" target="_blank">Proposal</a>
-<a class="nav" href="https://millenniumfalcon418.github.io/hyperdrive/report" target="_blank">Report</a>
 <a class="nav"  href="https://millenniumfalcon418.github.io/hyperdrive/checkpoint" target="_blank">Checkpoint Report</a></div>
 
 ## OVERVIEW
@@ -18,9 +17,9 @@ With a direct method, there is a definite amount of work that needs to be done. 
 
 ## THE CHALLENGE
 CG is known to converge to the exact solution in N steps for a matrix of size N, which can lead to a lot of computation time for matrices having a very high value of N, as so often happens with real world solutions. Therefore, to reduce this time, the algorithm would be required to stop its iterations much earlier and still obtain a very good approximation after much fewer than N steps.
-To achieve this, a certain amount of preconditioning is required. It will be essential to select a preconditioner that can produce the fastest convergence under the given code conditions.
+To achieve this, a certain amount of preconditioning is required. An appropriate preconditioner that can produce the fastest convergence under the given code conditions needs to be selected.
 
-Another challenge would be to prevent the code from being bandwidth-bound. For this, it will be essential to store the sparse matrix in a compressed format that does not take up much storage. Memory overhead increases largely with extremely huge matrices. Therefore, it is important to make efficient use of storage. Also, the compressed format should enable faster access to reduce element retrieval time.
+Another challenge was be to prevent the code from being bandwidth-bound. For this, it will be essential to store the sparse matrix in a compressed format that does not take up much storage. Memory overhead increases largely with extremely huge matrices. Therefore, it is important to make efficient use of storage. Also, the compressed format should enable faster access to reduce element retrieval time.
 
 ## DELIVERABLES
 ### OUR ASPIRATIONS
