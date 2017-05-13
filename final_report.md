@@ -41,6 +41,8 @@ Preconditioning is basically the application of a preconditioning matrix that co
 We implemented three preconditioners, namely, the Symmetric Successive Over-Relaxation, Jacobi and Blocked Jacobi and studied them to obtain the best performing preconditioning. We observed that for our requirements of the matrices (diagonally heavy, banded) the Jacobi preconditioner gave convergence for the lowest number of iterations. Although SSOR is known to precondition the matrix better, our studies showed that it is a strongly serial code due to forward/backward propagations. Therefore, we preconditioned our matrix using the Jacobi preconditioner, since it required the least number of iterations and also had the most scope for parallelization.
 
 ### Code Profiling
+We profiled the sequential code using gprof to determine which functions in our code were taking the most amount of computation time, in order to apply OpenMP primitives or kernalize the function.
+
 
 ### Multithreaded implementation using OpenMP
 
