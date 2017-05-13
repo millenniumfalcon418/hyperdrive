@@ -24,7 +24,7 @@ Matrix A must be-
 3) Banded, diagonally heavy
 
 Matrix B must be a vector of size equal to order of A.
-## Output Constraints
+### Output Constraints
 1) Solution x is computed as the result of the algorithm
 
 2) L2 norm of the residual vector must be less than 1e-05 to declare convergence
