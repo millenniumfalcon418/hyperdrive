@@ -1,7 +1,7 @@
 ## THE CHALLENGE
 1) Since the CG algorithm deals with large matrices, the problem can easily be bandwidth-bound. Hence, it was essential to store the sparse matrix in a compressed format that does not take up much storage and also enables faster access to reduce element retrieval time.
 
-2) CG is known to converge to the exact solution in N steps for a matrix of size N, which can lead to a lot of computation time for matrices having a very high value of N, as so often happens with real world solutions. Therefore, to reduce this time, the algorithm would be required to stop its iterations much earlier and still obtain a very good approximation after much fewer than N steps. To achieve this, a certain amount of preconditioning is required. An appropriate preconditioner that can produce the fastest convergence under the given code conditions was selected.
+2) CG is known to converge to the exact solution in N steps for a good-conditioned matrix of size N, which can lead to a lot of computation time for matrices having a very high value of N. Therefore, to reduce this time, the algorithm would be required to stop its iterations much earlier and still obtain a very good approximation after much fewer than N steps. To achieve this, a certain amount of preconditioning is required. An appropriate preconditioner that can produce the fastest convergence under the given code conditions was selected.
 
 3) The algorithm involved many operations like two matrix-vector products, scalar-vector products, etc., all of which are computationally intensive and hence require a lot of time in a single-threaded program.
 
@@ -31,7 +31,10 @@ We observed a reduction in memory storage of about 99.907% for our largest test 
 <br>
 <img src="https://millenniumfalcon418.github.io/hyperdrive/images/CRS.png"/>
 
-### 
+### Jacobi Preconditioning
+As mentioned before, for a good-conditioned matrix, the CG algorithm would converge in N steps. However, for a poor-conditioned matrix A, the same would take even more than N steps for convergence. As a result, preconditioning the matrix is crucial to performance.
+
+Preconditioning
 
 ## RESOURCES
 GHC machines with NVIDIA Geforce GTX 1080
