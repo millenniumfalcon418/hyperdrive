@@ -42,7 +42,7 @@ We implemented three preconditioners, namely, the Symmetric Successive Over-Rela
 
 ### Code Profiling
 We profiled the sequential code using gprof to determine which functions in our code were taking the most amount of computation time, in order to apply OpenMP primitives or kernalize the function.
-
+<img src="https://millenniumfalcon418.github.io/hyperdrive/images/Untitled.png"/>
 
 ### Multithreaded implementation using OpenMP
 
