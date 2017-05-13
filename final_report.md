@@ -40,6 +40,8 @@ Preconditioning is basically the application of a preconditioning matrix that co
 
 We implemented three preconditioners, namely, the Symmetric Successive Over-Relaxation, Jacobi and Blocked Jacobi and studied them to obtain the best performing preconditioning. We observed that for our requirements of the matrices (diagonally heavy, banded) the Jacobi preconditioner gave convergence for the lowest number of iterations. Although SSOR is known to precondition the matrix better, our studies showed that it is a strongly serial code due to forward/backward propagations. Therefore, we preconditioned our matrix using the Jacobi preconditioner, since it required the least number of iterations and also had the most scope for parallelization.
 
+### Code Profiling
+
 ### Multithreaded implementation using OpenMP
 
 OpenMP (Open Multi-Processing) is an application programming interface (API) that supports multi-platform shared memory 
@@ -62,8 +64,7 @@ designed to work with programming languages such as C, C++, and Fortran.
 
 We created CUDA kernels to perform Matrix-vector on the GPU. For this we split the matrix vector product into three kernels.
 
-1) In the first kernel we compute a nnz sized array of the product of all matrix elements with the corresponding vector 
-elements in parallel.
+1) In the first kernel we compute a nnz sized array of the product of all matrix elements with the corresponding vector elements in parallel.
 2) The second kernel was used to compute the inclusive scan on the product array.
 3) The third kernel was used to store the appropriate sum into the corresponding position in the result vector.
 
@@ -86,7 +87,9 @@ We obtained a significantly huge improvement in the number of iterations require
 Here, we observed that the speedup for the CUDA implementation of the PCG was always higher than that obtained for the OpenMP implementation. However, for the smaller matrices, the difference is very small. This is because, for smaller matrices, the amount of computation is comparatively lesser and as a result, the overhead of kernel launches cannot be mitigated. Therefore, it becomes comparable to the overhead of spawning threads.
 
 ## RESOURCES
-GHC machines with NVIDIA Geforce GTX 1080
+GHC machines:
+CPU Specs: Xeon E5-1660, 8 cores (2x hyperthreaded), 32GB DRAM
+GPU Specs: GeForce GTX1080, 2560-cores, 8GB RAM
 
 ## WORK DISTRIBUTION
 Equal work was performed by both the project members.
