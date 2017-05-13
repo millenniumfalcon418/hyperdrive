@@ -43,6 +43,7 @@ We implemented three preconditioners, namely, the Symmetric Successive Over-Rela
 ### GPU implementation
 
 ## GRAPHS AND ANALYSIS
+1) Improvement in the number of iterations due to Preconditioning
 
 ## RESOURCES
 GHC machines with NVIDIA Geforce GTX 1080
