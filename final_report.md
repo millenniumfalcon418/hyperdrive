@@ -34,7 +34,15 @@ We observed a reduction in memory storage of about 99.907% for our largest test 
 ### Jacobi Preconditioning
 As mentioned before, for a good-conditioned matrix, the CG algorithm would converge in N steps. However, for a poor-conditioned matrix A, the same would take even more than N steps for convergence. As a result, preconditioning the matrix is crucial to performance.
 
-Preconditioning
+Preconditioning is basically the application of a preconditioning matrix that conditions a problem so that its condition number is reduced. Condition number of a function with respect to an argument measures how much the output value X of the function can change for a small change in the input argument i.e. it gives a measure of the sensitivity of the function. The lower the condition number, the better is the preconditioning of the matrix and an ill-conditioned matrix has a high condition number.  Therefore, if the condition number is large, even a small error in b may cause a large error in x. On the other hand, if the condition number is small then the error in x will not be much bigger than the error in b.
+
+We implemented three preconditioners, namely, the Symmetric Successive Over-Relaxation, Jacobi and Blocked Jacobi and studied them to obtain the best performing preconditioning. We observed that for our requirements of the matrices (diagonally heavy, banded) the Jacobi preconditioner gave convergence for the lowest number of iterations. Although SSOR is known to precondition the matrix better, our studies showed that it is a strongly serial code due to forward/backward propagations. Therefore, we preconditioned our matrix using the Jacobi preconditioner, since it required the least number of iterations and also had the most scope for parallelization.
+
+### Multithreaded implementation using OpenMP
+
+### GPU implementation
+
+## GRAPHS AND ANALYSIS
 
 ## RESOURCES
 GHC machines with NVIDIA Geforce GTX 1080
