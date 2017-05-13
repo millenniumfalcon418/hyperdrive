@@ -16,6 +16,7 @@
 For the linear system Ax = b
 ### Input Constraints
 Matrix A must be-
+
 1) Symmetric
 
 2) Positive definite
@@ -26,13 +27,13 @@ Matrix B must be a vector of size equal to order of A.
 ## Output Constraints
 1) Solution x is computed as the result of the algorithm
 
-2) L2 norm of the residual vector must be less than e-05 to declare convergence
+2) L2 norm of the residual vector must be less than 1e-05 to declare convergence
 
 ## VISUAL REPRESENTATIONS OF TEST MATRICES USED
 <br>
 <img src="https://millenniumfalcon418.github.io/hyperdrive/images/matrices.png"/>
 
-| Sr. No.   |      Num_threads      |  Execution Time(s) |
+| Sr. No.   |      Test Matrix File Name      |  Description |
 |:----------:|:-------------:|:------:|
 |1	|2	|95.88|
 |2	|4	|52.10|
