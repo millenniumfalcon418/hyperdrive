@@ -42,7 +42,35 @@ We implemented three preconditioners, namely, the Symmetric Successive Over-Rela
 
 ### Multithreaded implementation using OpenMP
 
+OpenMP (Open Multi-Processing) is an application programming interface (API) that supports multi-platform shared memory 
+multiprocessing programming in C, C++, and Fortran, on most platforms. It consists of a set of compiler directives, 
+library routines, and environment variables that influence run-time behavior.
+
+We profiled our sequential implementation using GNU Gprof which helped us identify the runtime for each section of the program.
+Most of the time was being spent in Matrix-vector product (over 80%). Hence we decided to optimize the function to compute 
+matrix-vector product efficiently. For this we used openmp pragma "omp parallel for num_threads(nThreads)". 
+
+We also optimized functions to compute the vector dot product using the pragma "omp parallel for reduction num_threads(nThreads)".
+
+We tested the code against 5 different matrices of different sizes and shapes. We observed that as the workload increases the 
+speedup over the sequential version also increases. This trend can be seen in the speedup graph below.
+
 ### GPU implementation
+
+CUDA is a parallel computing platform and application programming interface (API) model created by Nvidia. The CUDA platform is 
+designed to work with programming languages such as C, C++, and Fortran.
+
+We created CUDA kernels to perform Matrix-vector on the GPU. For this we split the matrix vector product into three kernels.
+
+1) In the first kernel we compute a nnz sized array of the product of all matrix elements with the corresponding vector 
+elements in parallel.
+2) The second kernel was used to compute the inclusive scan on the product array.
+3) The third kernel was used to store the appropriate sum into the corresponding position in the result vector.
+
+The inclusive scan step helped us to obtain higher parallelism as opposed to performing reduction on the entire array compiuted
+in step 1.
+
+With this we obtained upto 13x speedup over the sequential version.
 
 ## GRAPHS AND ANALYSIS
 1) Improvement in the number of iterations due to Preconditioning
