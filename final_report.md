@@ -33,11 +33,13 @@ Matrix B must be a vector of size equal to order of A.
 <br>
 <img src="https://millenniumfalcon418.github.io/hyperdrive/images/matrices.png"/>
 
-| Sr. No.   |      Test Matrix File Name      |  Description |
-|:----------:|:-------------:|:------:|
-|1	|2	|95.88|
-|2	|4	|52.10|
-|3	|8	|27.09|
+| Sr. No.   |      Test Matrix File Name      |  Description |  N |  Non-zero elements |
+|:----------:|:-------------:|:------:|:------:|:------:|
+|1	|BCSSTK14	|real symmetric positive definite|1,806|63,454|
+|2	|BCSSTK15	|real symmetric positive definite|3,948|117,816|
+|3	|BCSSTK18	|real symmetric positive definite|11,948|149,090|
+|4	|S3DKT3M2	|real symmetric positive definite|90,449|3,753,461|
+|5	|S3RMT3M3	|real symmetric positive definite|5,357|207,695|
 
 ## OUR APPROACH
 ### Compressed Row Storage Format
