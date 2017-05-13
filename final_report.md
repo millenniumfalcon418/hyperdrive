@@ -7,7 +7,9 @@
 
 ## CAPABILITIES OF OUR CONJUGATE GRADIENT SOLVER
 1) Provides a preconditioned sequential implementation of the CG solver
+
 2) Includes a multithreaded implementation of the Preconditioned Conjugate Gradient (PCG) solver using OpenMP primitives
+
 3) Presents a GPU implementation of the PCG using CUDA
 
 ## INPUT AND OUTPUT CONSTRAINTS
@@ -15,16 +17,26 @@ For the linear system Ax = b
 ### Input Constraints
 Matrix A must be-
 1) Symmetric
+
 2) Positive definite
+
 3) Banded, diagonally heavy
+
 Matrix B must be a vector of size equal to order of A.
 ## Output Constraints
 1) Solution x is computed as the result of the algorithm
+
 2) L2 norm of the residual vector must be less than e-05 to declare convergence
 
 ## VISUAL REPRESENTATIONS OF TEST MATRICES USED
 <br>
 <img src="https://millenniumfalcon418.github.io/hyperdrive/images/matrices.png"/>
+
+| Sr. No.   |      Num_threads      |  Execution Time(s) |
+|:----------:|:-------------:|:------:|
+|1	|2	|95.88|
+|2	|4	|52.10|
+|3	|8	|27.09|
 
 ## OUR APPROACH
 ### Compressed Row Storage Format
