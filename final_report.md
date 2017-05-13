@@ -123,12 +123,12 @@ GPU Specs: GeForce GTX1080, 2560-cores, 8GB RAM
 Equal work was performed by both the project members.
 
 ## REFERENCES
-1. https://en.wikipedia.org/wiki/Sparse_matrix#Solving_sparse_matrix_equations
-2. https://en.wikipedia.org/wiki/Conjugate_gradient_method
+1. Michele Benzi, "Preconditioning Techniques for Large Linear Systems: A Survey," Journal of Computational Physics 182, 418–477 (2002)
+2. Jonathan Richard Shewchuk, "An Introduction to the Conjugate Gradient Method Without the Agonizing Pain"
 3. https://www.sharcnet.ca/help/index.php/Solving_Systems_of_Sparse_Linear_Equations
 4. http://www.idi.ntnu.no/~elster/tdt24/tdt24-f09/cg.pdf
 5. http://people.sc.fsu.edu/~jburkardt/cpp_src/cg/cg.html
 6. http://math.nist.gov/MatrixMarket/index.html
-7. Michele Benzi, "Preconditioning Techniques for Large Linear Systems: A Survey," Journal of Computational Physics 182, 418–477 (2002)
+7. https://en.wikipedia.org/wiki/Sparse_matrix#Solving_sparse_matrix_equations
 8. https://www.cise.ufl.edu/research/sparse/matrices/
-9. Jonathan Richard Shewchuk, "An Introduction to the Conjugate Gradient Method Without the Agonizing Pain" 
+9. https://en.wikipedia.org/wiki/Conjugate_gradient_method
