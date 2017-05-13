@@ -83,7 +83,7 @@ We obtained a significantly huge improvement in the number of iterations require
 <br>
 <img src="https://millenniumfalcon418.github.io/hyperdrive/images/speedup.png"/>
 <br>
-Here, we observed that the speedup for the CUDA implementation of the PCG 
+Here, we observed that the speedup for the CUDA implementation of the PCG was always higher than that obtained for the OpenMP implementation. However, for the smaller matrices, the difference is very small. This is because, for smaller matrices, the amount of computation is comparatively lesser and as a result, the overhead of kernel launches cannot be mitigated. Therefore, it becomes comparable to the overhead of spawning threads.
 
 ## RESOURCES
 GHC machines with NVIDIA Geforce GTX 1080
