@@ -79,6 +79,7 @@ With this we obtained upto 13x speedup over the sequential version.
 <br>
 We obtained a significantly huge improvement in the number of iterations required to converge after applying the Jacobi preconditioner. We can see a decrease of over 90% in the number of iterations for convergence for almost all our test matrices except for the S3RMT3M3 matrix. This was the matrix that we had considered as our special test case in order to observe the functioning of our algorithm in cases where the matrix, although sparse, is not diagonally heavy. For this matrix, we observe an increase in the number of iterations. However, all the other matrices perform extremely well, if they fulfil the hard input constraints required by our algorithm. 
 <br>
+
 2) OpenMP vs CUDA
 <img src="https://millenniumfalcon418.github.io/hyperdrive/images/speedup.png"/>
 <br>
