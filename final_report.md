@@ -23,6 +23,8 @@ Matrix B must be a vector of size equal to order of A.
 2) L2 norm of the residual vector must be less than e-05 to declare convergence
 
 ## VISUAL REPRESENTATIONS OF TEST MATRICES USED
+<br>
+<img src="https://millenniumfalcon418.github.io/hyperdrive/images/matrices.png"/>
 
 ## OUR APPROACH
 ### Compressed Row Storage Format
