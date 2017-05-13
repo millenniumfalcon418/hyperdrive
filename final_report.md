@@ -41,17 +41,19 @@ Matrix B must be a vector of size equal to order of A.
 |4	|S3DKT3M2	|real symmetric positive definite|90,449|3,753,461|
 |5	|S3RMT3M3	|real symmetric positive definite|5,357|207,695|
 
+<br>
 ## OUR APPROACH
 ### Compressed Row Storage Format
 In order to mitigate the bandwidth-bound problem, we stored the sparse matrices in the compressed row storage format. As per the CRS format, we used three 1-D arrays, such that one array stored only the non-zero elements, the second one stored their corresponding column numbers and the third one gave the row number as well as stored the number at which we index into the other two arrays to retrieve the required element.
 We observed a reduction in memory storage of about 99.907% for our largest test matrix of size 90449.
-<br>
+
+
 <img src="https://millenniumfalcon418.github.io/hyperdrive/images/CRS.png"/>
 
 ### Jacobi Preconditioning
 As mentioned before, for a good-conditioned matrix, the CG algorithm would converge in N steps. However, for a poor-conditioned matrix A, the same would take even more than N steps for convergence. As a result, preconditioning the matrix is crucial to performance.
 
-Preconditioning is basically the application of a preconditioning matrix that conditions a problem so that its condition number is reduced. Condition number of a function with respect to an argument measures how much the output value X of the function can change for a small change in the input argument i.e. it gives a measure of the sensitivity of the function. The lower the condition number, the better is the preconditioning of the matrix and an ill-conditioned matrix has a high condition number.  Therefore, if the condition number is large, even a small error in b may cause a large error in x. On the other hand, if the condition number is small then the error in x will not be much bigger than the error in b.
+Preconditioning is the process of improving the condition number of the matrix A by computing its approximate inverse. Condition number of a function with respect to an argument measures how much the output value X of the function can change for a small change in the input argument i.e. it gives a measure of the sensitivity of the function. The lower the condition number, the better is the preconditioning of the matrix and an ill-conditioned matrix has a high condition number.  Therefore, if the condition number is large, even a small error in b may cause a large error in x. On the other hand, if the condition number is small then the error in x will not be much bigger than the error in b.
 
 We implemented three preconditioners, namely, the Symmetric Successive Over-Relaxation, Jacobi and Blocked Jacobi and studied them to obtain the best performing preconditioning. We observed that for our requirements of the matrices (diagonally heavy, banded) the Jacobi preconditioner gave convergence for the lowest number of iterations. Although SSOR is known to precondition the matrix better, our studies showed that it is a strongly serial code due to forward/backward propagations. Therefore, we preconditioned our matrix using the Jacobi preconditioner, since it required the least number of iterations and also had the most scope for parallelization.
 
