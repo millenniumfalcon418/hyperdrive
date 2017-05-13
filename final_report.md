@@ -46,6 +46,12 @@ We implemented three preconditioners, namely, the Symmetric Successive Over-Rela
 
 ## GRAPHS AND ANALYSIS
 1) Improvement in the number of iterations due to Preconditioning
+<br>
+<img src="https://millenniumfalcon418.github.io/hyperdrive/images/nIters.png"/>
+
+2) OpenMP vs CUDA
+<br>
+<img src="https://millenniumfalcon418.github.io/hyperdrive/images/CRS.png"/>
 
 ## RESOURCES
 GHC machines with NVIDIA Geforce GTX 1080
