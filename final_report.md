@@ -86,6 +86,16 @@ We obtained a significantly huge improvement in the number of iterations require
 <br>
 Here, we observed that the speedup for the CUDA implementation of the PCG was always higher than that obtained for the OpenMP implementation. However, for the smaller matrices, the difference is very small. This is because, for smaller matrices, the amount of computation is comparatively lesser and as a result, the overhead of kernel launches cannot be mitigated. Therefore, it becomes comparable to the overhead of spawning threads.
 
+## Conclusions
+
+1) Compressed row storage is very efficient(upto 99.9% more efficient as compared to the regular matrix storage) for storing sparse matrices, it solved the problem of bandwidth boundedness.
+
+2) Preconditioned CG algorithm converges much faster (upto 30 times faster) as compared to the non preconditioned algorithm.
+
+3) Jacobi Preconditioner, although simple and lightweight, is quite effective in banded and diagonal heavy matrices.
+
+4) Parallelizing matrix vector product on a GPU is effective if the kernel is splitted into product, inclusive scan and gather operations.
+
 ## RESOURCES
 GHC machines:
 CPU Specs: Xeon E5-1660, 8 cores (2x hyperthreaded), 32GB DRAM
