@@ -51,7 +51,7 @@ We implemented three preconditioners, namely, the Symmetric Successive Over-Rela
 
 2) OpenMP vs CUDA
 <br>
-<img src="https://millenniumfalcon418.github.io/hyperdrive/images/CRS.png"/>
+<img src="https://millenniumfalcon418.github.io/hyperdrive/images/speedup.png"/>
 
 ## RESOURCES
 GHC machines with NVIDIA Geforce GTX 1080
