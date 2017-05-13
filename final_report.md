@@ -66,27 +66,25 @@ We created CUDA kernels to perform Matrix-vector on the GPU. For this we split t
 
 1) In the first kernel we compute a nnz sized array of the product of all matrix elements with the corresponding vector elements in parallel.
 2) The second kernel was used to compute the inclusive scan on the product array.
-3) The third kernel was used to store the appropriate sum into the corresponding position in the result vector.
+3) The third kernel was a gather kernel used to store the appropriate sum into the corresponding position in the result vector.
 
-The inclusive scan step helped us to obtain higher parallelism as opposed to performing reduction on the entire array compiuted
+The inclusive scan step helped us to obtain higher parallelism as opposed to performing reduction on the entire array computed
 in step 1.
 
 With this we obtained upto 13x speedup over the sequential version.
 
 ## GRAPHS AND ANALYSIS
 1) Improvement in the number of iterations due to Preconditioning
-<br>
 <img src="https://millenniumfalcon418.github.io/hyperdrive/images/nIters.png"/>
 <br>
 We obtained a significantly huge improvement in the number of iterations required to converge after applying the Jacobi preconditioner. We can see a decrease of over 90% in the number of iterations for convergence for almost all our test matrices except for the S3RMT3M3 matrix. This was the matrix that we had considered as our special test case in order to observe the functioning of our algorithm in cases where the matrix, although sparse, is not diagonally heavy. For this matrix, we observe an increase in the number of iterations. However, all the other matrices perform extremely well, if they fulfil the hard input constraints required by our algorithm. 
-
-2) OpenMP vs CUDA
 <br>
+2) OpenMP vs CUDA
 <img src="https://millenniumfalcon418.github.io/hyperdrive/images/speedup.png"/>
 <br>
 Here, we observed that the speedup for the CUDA implementation of the PCG was always higher than that obtained for the OpenMP implementation. However, for the smaller matrices, the difference is very small. This is because, for smaller matrices, the amount of computation is comparatively lesser and as a result, the overhead of kernel launches cannot be mitigated. Therefore, it becomes comparable to the overhead of spawning threads.
 
-## Conclusions
+## CONCLUSION
 
 1) Compressed row storage is very efficient(upto 99.9% more efficient as compared to the regular matrix storage) for storing sparse matrices, it solved the problem of bandwidth boundedness.
 
@@ -99,6 +97,7 @@ Here, we observed that the speedup for the CUDA implementation of the PCG was al
 ## RESOURCES
 GHC machines:
 CPU Specs: Xeon E5-1660, 8 cores (2x hyperthreaded), 32GB DRAM
+
 GPU Specs: GeForce GTX1080, 2560-cores, 8GB RAM
 
 ## WORK DISTRIBUTION
